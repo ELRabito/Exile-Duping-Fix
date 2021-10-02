@@ -9,8 +9,6 @@
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
  */
  
-private["_container"];
-_container = _this select 1;
 if((!(ExileClientCurrentInventoryContainer isEqualTo "ObjNull") && (ExileClientCurrentInventoryContainer iskindOf "AllVehicles") || (ExileClientCurrentInventoryContainer isKindOf 'Exile_Container_Abstract')) ||
 (!(ExileClientCurrentInventorySecondaryContainer isEqualTo "ObjNull") && (ExileClientCurrentInventorySecondaryContainer iskindOf "AllVehicles") || (ExileClientCurrentInventorySecondaryContainer isKindOf 'Exile_Container_Abstract'))) then
 {
