@@ -15,7 +15,7 @@ if((!(ExileClientCurrentInventoryContainer isEqualTo "ObjNull") && (ExileClientC
     { 
         if !((typeOf _x) in ["GroundWeaponHolder", "WeaponHolderSimulated", "LootWeaponHolder"]) then
         {
-            ["vehicleSaveRequest", [netId _x]] call ExileClient_system_network_send;
+            if(netID _x isNotEqualTo "") then { ["vehicleSaveRequest", [netId _x]] call ExileClient_system_network_send};
         };
             
     } forEach 
